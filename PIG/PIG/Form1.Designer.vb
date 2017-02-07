@@ -25,7 +25,7 @@ Partial Class Form1
         Me.BtnTirar = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TxtJugador = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtMaquina = New System.Windows.Forms.TextBox()
         Me.TxtDado = New System.Windows.Forms.TextBox()
         Me.TxtAcumula = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -59,12 +59,12 @@ Partial Class Form1
         Me.TxtJugador.Size = New System.Drawing.Size(100, 20)
         Me.TxtJugador.TabIndex = 2
         '
-        'TextBox2
+        'TxtMaquina
         '
-        Me.TextBox2.Location = New System.Drawing.Point(172, 24)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TxtMaquina.Location = New System.Drawing.Point(172, 24)
+        Me.TxtMaquina.Name = "TxtMaquina"
+        Me.TxtMaquina.Size = New System.Drawing.Size(100, 20)
+        Me.TxtMaquina.TabIndex = 3
         '
         'TxtDado
         '
@@ -127,7 +127,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtAcumula)
         Me.Controls.Add(Me.TxtDado)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TxtMaquina)
         Me.Controls.Add(Me.TxtJugador)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.BtnTirar)
@@ -141,7 +141,7 @@ Partial Class Form1
     Friend WithEvents BtnTirar As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents TxtJugador As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtMaquina As TextBox
     Friend WithEvents TxtDado As TextBox
     Friend WithEvents TxtAcumula As TextBox
     Friend WithEvents Label1 As Label
