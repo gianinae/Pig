@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.BtnTirar = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TxtJugador = New System.Windows.Forms.TextBox()
@@ -37,100 +38,88 @@ Partial Class Form1
         '
         'BtnTirar
         '
-        Me.BtnTirar.Location = New System.Drawing.Point(26, 170)
+        Me.BtnTirar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        resources.ApplyResources(Me.BtnTirar, "BtnTirar")
+        Me.BtnTirar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.BtnTirar.Name = "BtnTirar"
-        Me.BtnTirar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnTirar.TabIndex = 0
-        Me.BtnTirar.Text = "Tirar"
-        Me.BtnTirar.UseVisualStyleBackColor = True
+        Me.BtnTirar.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(26, 200)
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.ForeColor = System.Drawing.Color.Lavender
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Parar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'TxtJugador
         '
-        Me.TxtJugador.Location = New System.Drawing.Point(12, 24)
+        Me.TxtJugador.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        resources.ApplyResources(Me.TxtJugador, "TxtJugador")
+        Me.TxtJugador.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TxtJugador.Name = "TxtJugador"
-        Me.TxtJugador.Size = New System.Drawing.Size(100, 20)
-        Me.TxtJugador.TabIndex = 2
         '
         'TxtMaquina
         '
-        Me.TxtMaquina.Location = New System.Drawing.Point(172, 24)
+        Me.TxtMaquina.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        resources.ApplyResources(Me.TxtMaquina, "TxtMaquina")
+        Me.TxtMaquina.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TxtMaquina.Name = "TxtMaquina"
-        Me.TxtMaquina.Size = New System.Drawing.Size(100, 20)
-        Me.TxtMaquina.TabIndex = 3
         '
         'TxtDado
         '
-        Me.TxtDado.Location = New System.Drawing.Point(92, 74)
+        Me.TxtDado.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        resources.ApplyResources(Me.TxtDado, "TxtDado")
+        Me.TxtDado.ForeColor = System.Drawing.Color.Purple
         Me.TxtDado.Name = "TxtDado"
-        Me.TxtDado.Size = New System.Drawing.Size(100, 20)
-        Me.TxtDado.TabIndex = 4
         '
         'TxtAcumula
         '
-        Me.TxtAcumula.Location = New System.Drawing.Point(92, 119)
+        Me.TxtAcumula.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        resources.ApplyResources(Me.TxtAcumula, "TxtAcumula")
         Me.TxtAcumula.Name = "TxtAcumula"
-        Me.TxtAcumula.Size = New System.Drawing.Size(100, 20)
-        Me.TxtAcumula.TabIndex = 5
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 5)
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Label1"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(172, 4)
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Label2"
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(119, 58)
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Label3"
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(122, 101)
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Label4"
         '
         'BtnCerrar
         '
-        Me.BtnCerrar.Location = New System.Drawing.Point(197, 200)
+        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        resources.ApplyResources(Me.BtnCerrar, "BtnCerrar")
+        Me.BtnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCerrar.Name = "BtnCerrar"
-        Me.BtnCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnCerrar.TabIndex = 10
-        Me.BtnCerrar.Text = "Cerrar"
-        Me.BtnCerrar.UseVisualStyleBackColor = True
+        Me.BtnCerrar.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.BackgroundImage = Global.PIG.My.Resources.Resources.AA12
         Me.Controls.Add(Me.BtnCerrar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -143,7 +132,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.BtnTirar)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

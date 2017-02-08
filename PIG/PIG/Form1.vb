@@ -14,7 +14,8 @@
             If dado = 1 Then
                 acumGlobal = 0
                 jugador = 1
-                MessageBox.Show("Turno de la Maquina", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+                MessageBox.Show("Obtuviste un 1! 
+Turno de la Maquina", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
                 Computador()
             End If
             acumGlobal = acumGlobal + dado
@@ -38,7 +39,9 @@
             acumGlobal = 0
             TxtJugador.Text = acum1
             jugador = 1
-            MessageBox.Show("Turno de la Maquina", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+            MessageBox.Show("Paraste!
+Turno de la Maquina", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+
         End If
         Computador()
 
@@ -59,15 +62,18 @@
                     acumGlobal = 0
                     contador = cuenta
                 End If
-                acumGlobal = acumGlobal + dado
-                acum2 = acum2 + acumGlobal
-                TxtAcumula.Text = acumGlobal
-                TxtMaquina.Text = acum2
+                If dado <> 1 Then
+                    acumGlobal = acumGlobal + dado
+                    acum2 = acum2 + acumGlobal
+                    TxtAcumula.Text = acumGlobal
+                    TxtMaquina.Text = acum2
+                End If
+
             End If
         End While
         jugador = 0
         acumGlobal = 0
-        MessageBox.Show("Su turno", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+        MessageBox.Show("Tú turno", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
     End Sub
 
     Sub Ganador()
@@ -84,6 +90,7 @@
             acum1 = 0
             acum2 = 0
             jugador = 2
+
             MessageBox.Show("Has Perdido!!", "My application", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
 
         End If
@@ -95,4 +102,6 @@
     Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
         Close()
     End Sub
+
+
 End Class
