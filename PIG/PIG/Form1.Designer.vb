@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.BtnCerrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnTirar
@@ -116,11 +117,21 @@ Partial Class Form1
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Label4"
         '
+        'BtnCerrar
+        '
+        Me.BtnCerrar.Location = New System.Drawing.Point(197, 200)
+        Me.BtnCerrar.Name = "BtnCerrar"
+        Me.BtnCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnCerrar.TabIndex = 10
+        Me.BtnCerrar.Text = "Cerrar"
+        Me.BtnCerrar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.BtnCerrar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -148,4 +159,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents BtnCerrar As Button
 End Class
